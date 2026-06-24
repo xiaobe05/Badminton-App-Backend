@@ -1,0 +1,19 @@
+﻿### Signup
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+  "account_name": "Test Player",
+  "account_email": "player1@test.com",
+  "account_password": "password123",
+  "account_type_id": 1
+}
+
+### Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "account_email": "player1@test.com",
+  "account_password": "password123"
+}
